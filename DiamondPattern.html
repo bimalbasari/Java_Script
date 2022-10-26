@@ -12,33 +12,55 @@
     <p id=p>Diamond Pattern</p>
     <p id="p0"></p>
     <script>
+
+
+        //------------------ Top side diomond .-------------------
+
+
+
         var i, j, k, l;
-        for (i = 0; i < 5; i++) {
-            let star = "";
-            for (j = 5; j > i; j--) {
+        for (i = 0; i < 4; i++) // Outer Loops for top .
+        {
+            let star = ""; //Declaring fast variable  for store data.
+            for (j = 5; j > i; j--) //Inner loops for print top left space.
+            {
                 star += " ";
             }
-            for (k = 0; k <= i; k++) {
+            for (k = 0; k <= i; k++) //Inner loops for print top left star.
+            {
                 star += "*";
             }
-            for (l = 1; l <= i; l++) {
+            for (l = 1; l <= i; l++) //Inner loops for print top right star.
+            {
                 star += "*";
             }
-            console.log(star)
+            console.log(star) // print top side.
         }
-        for (i = 0; i < 5; i++) {
-            let star2 = "";
-            for (j = 0; j <= i; j++) {
+
+
+
+        //---------------------- Bottom side  Diomond. --------------------
+
+
+
+        for (i = 4; i >= 0; i--) // Outer Loops for bottom. 
+        {
+            let star2 = ""; //Declaring  second variable  for store data.
+            for (j = 5; j > i; j--) //Inner loops for print bottom  left space .
+            {
                 star2 += " ";
             }
-            for (k = 5; k > i; k--) {
+            for (k = 0; k <= i; k++) //Inner loops for print bottom  left star .
+            {
                 star2 += "*";
             }
-            for (l = 4; l > i; l--) {
-                star2 += "*"
+            for (l = 1; l <= i; l++) //Inner loops for print bottom  right star.
+            {
+                star2 += "*";
             }
-            console.log(star2)
+            console.log(star2) // print bottom  side.
         }
+
 
     </script>
 
